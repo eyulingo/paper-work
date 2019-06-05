@@ -1,2 +1,2 @@
 # paper-work
-Some paperwork related to "yulingo" project.
+Some paperwork related to "`eyulingo`" project.
