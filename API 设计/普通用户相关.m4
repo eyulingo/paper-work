@@ -201,7 +201,7 @@ Parameters:
 ?id=1&id=2&id=3&amount=1&amount=2&amount=3
 
 Return:
-	“status”: “ok”/“internal_error”
+	“status”: “ok”/"inadequate_storage"/“internal_error”
 	“cost”: “¥12.50”
 
 ===================================
