@@ -161,7 +161,7 @@ Method: .POST
 
 Parameters:
 	“id”: 商品 ID
-	“count”: 购买数量
+	“amount”: 购买数量
 Return: {
 	“status”: “ok”/“internal_error"
 }
@@ -191,13 +191,13 @@ Method: .POST
 
 Parameters:
 	“id”: 商品 ID
-	“count”: 商品数量
+	“amount”: 商品数量
 	“receive_no”: 收货人
 	“receive_phone”: 收货电话
 	“receive_address”: 收货地址
 
 <special>: 同时发送多个商品写法：
-?id=1&id=2&id=3&count=1&count=2&count3
+?id=1&id=2&id=3&amount=1&amount=2&amount=3
 
 Return:
 	“status”: “ok”/“internal_error”
@@ -243,7 +243,7 @@ Parameters: <none>
 Return:
 	“status”: “ok” / ‘internal_error”
 	“values”: [{ 
-		“bill_id” 订单 ID
+		“order_id” 订单 ID
 		“receiver”: 收货人
         “receiver_phone”: 收货电话
         “receiver_address”: 收货地址
@@ -256,7 +256,7 @@ Return:
                 “store”: 商店名称
                     “store_id” ：商店ID
                 “current_price”: 下单时刻的价格
-                “storage”: 库存
+                "amount": 购买数量
                 “description”: 描述
                 “image_id”: 图片 ID
             }]

@@ -13,6 +13,23 @@ Return:
 
 ===================================
 
+获取自己的信息
+
+"/store/profile"
+
+Method：GET
+
+Parameters：<none>
+
+Return:
+ “Status”: “ok”/“bad_format”/"internal_error"
+"location"：地理位置
+"truename": 真实姓名
+"phone_no": 联系方式
+"password": 密码
+
+===================================
+
 修改自己的信息
 
 "/store/modify"
