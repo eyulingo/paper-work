@@ -205,3 +205,66 @@ Return："status": "ok" / "internal_error"
         “delivery_method”: "配送方式"
 
 ===================================
+
+修改商品信息
+
+"/store/modifygood"
+
+Method: POST
+    "good_id": 商品 ID
+    “name”: 商品名称
+	“price”: 价格
+	“coupon_price”: 优惠价格
+	“storage”: 库存
+	“description”: 描述
+	“image_id”: 图片 ID
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+给商品加标签
+
+"store/addtag"
+
+Method: POST
+    "good_id": 商品 ID
+    "tag_name": tag 名称
+Return："status": "ok" / "internal_error"
+
+
+===================================
+
+给商品移除标签
+
+"store/addtag"
+
+Method: POST
+    "good_id": 商品 ID
+    "tag_name": tag 名称
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+获取我家商店的商品
+
+"store/goods"
+
+Method: GET
+
+Return:
+	“Status”: “ok”, “internal_error”
+	“values”: [{
+		“id”: 商品 ID
+		“name”: 商品名称
+		“store”: 商店名称
+	    “store_id” ：商店ID
+		“price”: 价格
+		“coupon_price”: 优惠价格
+		“storage”: 库存
+		“description”: 描述
+		“image_id”: 图片 ID
+		"tags": { “...”, “...” }
+	} ...
+	]
