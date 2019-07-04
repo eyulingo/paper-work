@@ -3,7 +3,7 @@
 “/admin/login”
 Method: POST
 Parameters:
-	“username”
+	“adminname”
 	“password”
 Return:
 	{
