@@ -3,7 +3,7 @@
 “/store/login”
 Method: POST
 Parameters:
-	“username”
+	“distname”
 	“password”
 Return:
 	{
