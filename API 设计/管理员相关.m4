@@ -27,7 +27,8 @@ Parameters：<none>
 	 	“store_id”：店铺 ID <用于定位店铺>
 		“name”: 店铺名称
 		“address”: 店铺地址
-		“time”: 营业时间
+		“starttime”: 营业开始时间
+		"endtime":营业结束时间
 		“image_id”: 图片地址
 
 		"location"：地理位置
