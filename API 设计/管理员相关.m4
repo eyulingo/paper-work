@@ -29,12 +29,12 @@ Parameters：<none>
 		“address”: 店铺地址
 		“starttime”: 营业开始时间
 		"endtime":营业结束时间
-		“image_id”: 图片地址
-
+		“store_image_id”: 店铺图片地址
 		"location"：地理位置
     	"truename": 真实姓名
     	"phone_no": 联系方式
     	"password": 密码
+	"dist_image_id":经销商图片
 	}]
 
 ===================================
