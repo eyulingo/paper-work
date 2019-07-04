@@ -7,7 +7,7 @@ Parameters:
 	“password”
 Return:
 	{
-        “Status”: “ok”/“admin_user”/“bad_auth”/“account_locked”/“internal_error”
+        “Status”: “ok”/“bad_auth”/“account_locked”/“internal_error”
 	}
 
 
