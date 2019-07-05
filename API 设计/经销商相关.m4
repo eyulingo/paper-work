@@ -40,7 +40,7 @@ Parameters：
 
     "location"：地理位置
     "truename": 真实姓名
-    "phone_no": 联系方式
+    "dist_phone_no": 联系方式
     "password": 密码
 
  “Status”: “ok”/“bad_format”/"internal_error"
