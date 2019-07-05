@@ -27,6 +27,7 @@ Return:
 "truename": 真实姓名
 "phone_no": 联系方式
 "password": 密码
+"dist_image_id":商家头像
 
 ===================================
 
