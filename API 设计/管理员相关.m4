@@ -52,7 +52,6 @@ Parameters：
 	“address”: 店铺地址
 	“starttime”: 营业时间
 	"endtime":截止
-	“store_image_id”: 图片地址
 	"store_phone_nu":店铺手机号
 
  “Status”: “ok”/“bad_format”/"internal_error"
@@ -72,7 +71,6 @@ Parameters：
     "truename": 真实姓名
     "phone_nu": 联系方式
     "password": 密码
-    "dist_image_id":
 
  “Status”: “ok”/“bad_format”/"internal_error"
 
