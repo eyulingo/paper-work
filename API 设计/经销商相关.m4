@@ -3,11 +3,11 @@
 “/store/login”
 Method: POST
 Parameters:
-	“distname”
+	“distName”
 	“password”
 Return:
 	{
-        “Status”: “ok”/“provider_user”/“bad_auth”/“account_locked”/“internal_error”
+        “Status”: “ok”/“bad_auth”/“internal_error”
 	}
 
 
@@ -97,15 +97,7 @@ Return："status": "ok" / "internal_error"
 
 ===================================
 
-设置商品库存
 
-Method：POST
-
-Parameters：
-    “good_id”：商品 ID
-    “storage”：商品库存
-
-Return："status": "ok" / "internal_error"
 
 ===================================
 
@@ -132,31 +124,18 @@ Parameters：
 	“storage”: 库存
 	“description”: 描述
 	“image_id”: 图片 ID
+	//hidden默认设置 false(后端）
 
 Return："status": "ok" / "internal_error"
 
 ===================================
 
-隐藏商品
-”/hidegood”
-
-Method：POST
-Parameters：
-    "good_id"：商品 ID
-
-Return："status": "ok" / "internal_error"
 
 
-===================================
 
-显示商品
-”/displaygood”
 
-Method：POST
-Parameters：
-    "good_id"：商品 ID
 
-Return："status": "ok" / "internal_error"
+
 
 ===================================
 
@@ -218,6 +197,7 @@ Method: POST
 	“storage”: 库存
 	“description”: 描述
 	“image_id”: 图片 ID
+	"hidden":是否销售
 
 Return："status": "ok" / "internal_error"
 
@@ -258,13 +238,34 @@ Return:
 	“values”: [{
 		“id”: 商品 ID
 		“name”: 商品名称
-		“store”: 商店名称
-	    “store_id” ：商店ID
 		“price”: 价格
 		“coupon_price”: 优惠价格
 		“storage”: 库存
 		“description”: 描述
 		“image_id”: 图片 ID
-		"tags": { “...”, “...” }
+		"tags": [ “...”, “...” ]
+		"hidden":隐藏
 	} ...
 	]
+
+===================================
+
+修改商品信息
+
+"store/modifygoods"
+
+Method: POST
+Params:
+{
+		“id”: 商品 ID
+		“name”: 商品名称
+		“price”: 价格
+		“coupon_price”: 优惠价格
+		“storage”: 库存
+		“description”: 描述
+		“image_id”: 图片 ID
+		"hidden":隐藏
+	} 
+
+Return："status": "ok" / "internal_error"
+
