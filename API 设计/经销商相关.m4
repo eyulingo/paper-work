@@ -251,22 +251,55 @@ Return:
 
 ===================================
 
-修改商品信息
+获得店铺信息
 
-"store/modifygoods"
+"store/mystoreinfo"
 
-Method: POST
-Params:
-{
-		“id”: 商品 ID
-		“name”: 商品名称
-		“price”: 价格
-		“coupon_price”: 优惠价格
-		“storage”: 库存
-		“description”: 描述
-		“image_id”: 图片 ID
-		"hidden":隐藏
-	} 
+Method: GET
+Params: <none>
 
-Return："status": "ok" / "internal_error"
+Return：“status”: “ok” “internal_error”
 
+	“name”: 店铺名称
+
+	“id”: 店铺 ID
+
+	“address”: 店铺地址
+
+	“time”: 营业时间
+
+	“image_id”: 图片地址
+
+	“phone_no”: 联系电话
+
+	“provider”: 经销商名称
+
+    "provider_avatar": 经销商头像
+
+	“comments”: [{ “username”, “comment_content”: “star_count”}...]
+
+
+
+
+===================================
+
+修改店铺信息
+"store/modifystoreinfo"
+
+Method: .POST
+
+Params: 
+
+	“name”: 店铺名称
+
+	“address”: 店铺地址
+
+	“starttime”: 营业开始时间
+	
+	"endtime": 营业终止时间
+
+	“phone_no”: 联系电话
+
+	“provider”: 经销商名称
+	
+Return：“status”: “ok” “internal_error”
