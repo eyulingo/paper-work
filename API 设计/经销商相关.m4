@@ -45,6 +45,125 @@ Parameters：
     "password": 密码
 
  “Status”: “ok”/“bad_format”/"internal_error"
+ 
+ ===================================
+
+获得店铺信息
+
+"store/mystoreinfo"
+
+Method: GET
+Params: <none>
+
+Return：“status”: “ok” “internal_error”
+
+	“name”: 店铺名称
+
+	“id”: 店铺 ID
+
+	“address”: 店铺地址
+
+	“starttime”: 营业开始时间
+	
+	"endtime": 营业终止时间
+	
+	“image_id”: 图片地址
+
+	“phone_no”: 联系电话
+	
+	"deliver_method":默认配送
+
+	“comments”: [{ “username”, “comment_content”: “star_count”}...]
+
+
+
+
+===================================
+
+修改店铺信息
+"store/modifystoreinfo"
+
+Method: .POST
+
+Params: 
+
+	“name”: 店铺名称
+
+	“address”: 店铺地址
+
+	“starttime”: 营业开始时间
+	
+	"endtime": 营业终止时间
+
+	“phone_no”: 联系电话
+
+	
+Return：“status”: “ok” “internal_error”
+
+===================================
+
+获取我家商店的商品
+
+"store/goods"
+
+Method: GET
+
+Return:
+	“Status”: “ok”, “internal_error”
+	“values”: [{
+		“id”: 商品 ID
+		“name”: 商品名称
+		“price”: 价格
+		“coupon_price”: 优惠价格
+		“storage”: 库存
+		“description”: 描述
+		“image_id”: 图片 ID
+		"tags": [ “...”, “...” ]
+		"hidden":隐藏
+	} ...
+	]
+	
+===================================
+
+修改商品信息
+
+"/store/modifygood"
+
+Method: POST
+    "good_id": 商品 ID
+    “name”: 商品名称
+	“price”: 价格
+	“coupon_price”: 优惠价格
+	“storage”: 库存
+	“description”: 描述
+	“image_id”: 图片 ID
+	"hidden":是否销售
+
+Return："status": "ok" / "internal_error"
+	
+===================================
+
+给商品加标签
+
+"store/addtag"
+
+Method: POST
+    "good_id": 商品 ID
+    "tag_name": tag 名称
+Return："status": "ok" / "internal_error"
+
+
+===================================
+
+给商品移除标签
+
+"store/addtag"
+
+Method: POST
+    "good_id": 商品 ID
+    "tag_name": tag 名称
+
+Return："status": "ok" / "internal_error"
 
 ===================================
 
@@ -184,119 +303,10 @@ Method：GET
 Return："status": "ok" / "internal_error"
         “delivery_method”: "配送方式"
 
-===================================
-
-修改商品信息
-
-"/store/modifygood"
-
-Method: POST
-    "good_id": 商品 ID
-    “name”: 商品名称
-	“price”: 价格
-	“coupon_price”: 优惠价格
-	“storage”: 库存
-	“description”: 描述
-	“image_id”: 图片 ID
-	"hidden":是否销售
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-给商品加标签
-
-"store/addtag"
-
-Method: POST
-    "good_id": 商品 ID
-    "tag_name": tag 名称
-Return："status": "ok" / "internal_error"
-
-
-===================================
-
-给商品移除标签
-
-"store/addtag"
-
-Method: POST
-    "good_id": 商品 ID
-    "tag_name": tag 名称
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-获取我家商店的商品
-
-"store/goods"
-
-Method: GET
-
-Return:
-	“Status”: “ok”, “internal_error”
-	“values”: [{
-		“id”: 商品 ID
-		“name”: 商品名称
-		“price”: 价格
-		“coupon_price”: 优惠价格
-		“storage”: 库存
-		“description”: 描述
-		“image_id”: 图片 ID
-		"tags": [ “...”, “...” ]
-		"hidden":隐藏
-	} ...
-	]
-
-===================================
-
-获得店铺信息
-
-"store/mystoreinfo"
-
-Method: GET
-Params: <none>
-
-Return：“status”: “ok” “internal_error”
-
-	“name”: 店铺名称
-
-	“id”: 店铺 ID
-
-	“address”: 店铺地址
-
-	“starttime”: 营业开始时间
-	
-	"endtime": 营业终止时间
-	
-	“image_id”: 图片地址
-
-	“phone_no”: 联系电话
-
-	“comments”: [{ “username”, “comment_content”: “star_count”}...]
 
 
 
 
-===================================
 
-修改店铺信息
-"store/modifystoreinfo"
 
-Method: .POST
 
-Params: 
-
-	“name”: 店铺名称
-
-	“address”: 店铺地址
-
-	“starttime”: 营业开始时间
-	
-	"endtime": 营业终止时间
-
-	“phone_no”: 联系电话
-
-	
-Return：“status”: “ok” “internal_error”
