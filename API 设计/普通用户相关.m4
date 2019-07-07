@@ -20,7 +20,6 @@ Method: POST
 Parameters: 
 	phone_no: “1234566789”
 Return:
-	Status: “ok”/ “internal_error”
 	Code: “123456”
 
 ===================================
