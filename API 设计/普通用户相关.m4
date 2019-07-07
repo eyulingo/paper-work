@@ -18,7 +18,7 @@ Return:
 “/getcode”
 Method: POST
 Parameters: 
-	phone_no: “1234566789”
+	phone_nu: “1234566789”
 Return:
 	Code: “123456”
 
@@ -28,7 +28,7 @@ Return:
 “/register”
 Method: POST
 Parameters:
-	“phone_no”
+	“phone_nu”
 	“username”
 	“password”
 	“confirm_password”
@@ -55,7 +55,7 @@ Return:
 “/changephoneno”
 Method: .POST
 Parameters:
-    "new_phone_no": 新号码
+    "new_phone_nu": 新号码
     "confirm_code": 确认代码
 Return：
     “Status”: “ok”, "bad_phone_no”/“bad_confirm_code”/“internal_error”
@@ -136,7 +136,7 @@ Return: {
 	“address”: 店铺地址
 	“time”: 营业时间
 	“image_id”: 图片地址
-	“phone_no”: 联系电话
+	“phone_nu”: 联系电话
 	“provider”: 经销商名称
     "provider_avatar": 经销商头像
 	“comments”: [{ “username”, “comment_content”: “star_count”}...]
