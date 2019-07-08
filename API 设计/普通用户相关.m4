@@ -85,14 +85,14 @@ Return:
 
 ===================================
 
-换绑手机
-“/changephoneno”
+换绑邮箱
+“/changeemail”
 Method: .POST
 Parameters:
-    "new_phone_nu": 新号码
+    "new_email": 新邮箱
     "confirm_code": 确认代码
 Return：
-    “Status”: “ok”, "bad_phone_no”/“bad_confirm_code”/“internal_error”
+    “Status”: “ok”, "bad_email”/“bad_confirm_code”/“internal_error”
 
 ===================================
 
