@@ -39,6 +39,37 @@ Return:
 
 ===================================
 
+
+获取个人信息
+“/myprofile”
+
+Method: .GET
+
+Parameters: <none>
+
+Return:
+	“status”: “ok”/“internal_error”
+	“avatar”: 头像 ID
+	“username”：用户名
+	“userid”：用户ID
+	“user_phone”：用户手机号
+	]
+===================================
+
+更新头像
+“/setavatar”
+
+Method: .POST
+
+Parameters：
+    "avatar_id": <MongoDB 图片 ID>
+
+Return:
+	“status”: “ok”/“internal_error”
+
+===================================
+
+
 修改密码
 “/changepassword”
 Method: .POST
@@ -62,6 +93,51 @@ Return：
     “Status”: “ok”, "bad_phone_no”/“bad_confirm_code”/“internal_error”
 
 ===================================
+
+
+获取常用收货地址
+“/myaddress”
+
+Parameters: <none>
+
+Return:
+	“status”: “ok”/“internal_error”
+ 	“values”: [{	 
+	“receive_no”: 收货人
+	“receive_phone”: 收货电话
+	“receive_address”: 收货地址
+	}…]
+===================================
+
+增加收货地址
+“/addaddress”
+
+Method：.POST
+Parameters: 
+	“receive_no”: 收货人
+	“receive_phone”: 收货电话
+	“receive_address”: 收货地址
+
+Return:
+	“status”: “ok”/“internal_error”
+
+===================================
+
+删除收货地址
+“/removeaddress”
+
+Method：.POST
+Parameters: 
+	“receive_no”: 收货人
+	“receive_phone”: 收货电话
+	“receive_address”: 收货地址
+
+Return:
+	“status”: “ok”/“internal_error”
+	
+====================================
+
+
 
 搜索商品
 “/searchgood”
@@ -265,70 +341,4 @@ Return:
 
 ===================================
 
-更新头像
-“/setavatar”
 
-Method: .POST
-
-Parameters：
-    "avatar_id": <MongoDB 图片 ID>
-
-Return:
-	“status”: “ok”/“internal_error”
-
-===================================
-
-获取个人信息
-“/myprofile”
-
-Method: .GET
-
-Parameters: <none>
-
-Return:
-	“status”: “ok”/“internal_error”
-	“avatar”: 头像 ID
-	“username”：用户名
-	“userid”：用户ID
-	“user_phone”：用户手机号
-	]
-===================================
-获取常用收货地址
-“/myaddress”
-
-Parameters: <none>
-
-Return:
-	“status”: “ok”/“internal_error”
- 	“values”: [{	 
-	“receive_no”: 收货人
-	“receive_phone”: 收货电话
-	“receive_address”: 收货地址
-	}…]
-===================================
-
-增加收货地址
-“/addaddress”
-
-Method：.POST
-Parameters: 
-	“receive_no”: 收货人
-	“receive_phone”: 收货电话
-	“receive_address”: 收货地址
-
-Return:
-	“status”: “ok”/“internal_error”
-
-===================================
-
-删除收货地址
-“/removeaddress”
-
-Method：.POST
-Parameters: 
-	“receive_no”: 收货人
-	“receive_phone”: 收货电话
-	“receive_address”: 收货地址
-
-Return:
-	“status”: “ok”/“internal_error”
