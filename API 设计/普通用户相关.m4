@@ -21,7 +21,7 @@ Parameters:
 	phone_nu: “1234566789”
 Return:
 	“Status”: “ok”/“exist phone”/
-	Code: “123456”
+	
 
 ===================================
 
