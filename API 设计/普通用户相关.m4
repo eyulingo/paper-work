@@ -18,7 +18,7 @@ Return:
 “/getcode”
 Method: POST
 Parameters: 
-	phone_nu: “1234566789”
+	email: “447827389@qq.com”
 Return:
 	“Status”: “ok”/“exist phone”/
 	"code":"123"
@@ -31,13 +31,13 @@ Return:
 “/register”
 Method: POST
 Parameters:
-	“phone_nu”
+	“email”
 	“username”
 	“password”
 	“confirm_password”
 	“confirm_code”
 Return:
-	“Status”: “ok”/“bad_confirm”/“bad_phone_no”/“bad_confirm_code”/“internal_error”
+	“Status”: “ok”/“bad_confirm”/“bad_email”/“bad_confirm_code”/“internal_error”
 
 ===================================
 
@@ -54,7 +54,7 @@ Return:
 	“avatar”: 头像 ID
 	“username”：用户名
 	“userid”：用户ID
-	“user_phone”：用户手机号
+	“email”：用户手机号
 	]
 ===================================
 
