@@ -54,7 +54,7 @@ Return:
 	“avatar”: 头像 ID
 	“username”：用户名
 	“userid”：用户ID
-	“email”：用户手机号
+	“email”：用户邮箱
 	]
 ===================================
 
