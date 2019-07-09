@@ -2,11 +2,11 @@
 ===================================
 
 获取图片
-“/getimage”
+“/img/download”
 
 Method：.GET
 Parameters:
-	“image_id”: 图像 ID，可能是头像的、商品的、商店的
+	“fileId”: 图像 ID，可能是头像的、商品的、商店的
 
 Return:
 	<Image Object>
@@ -15,11 +15,12 @@ Return:
 ===================================
 
 上传图片
-“/uploadimage”
+“/img/upload”
 
 Method：.POST
 Parameters:
-	“image_id”: 图像 ID，可能是头像的、商品的、商店的
+<Image Object>
+	
 
 Return:
-	<Image Object>
+	“fileId”: 图像 ID，可能是头像的、商品的、商店的
