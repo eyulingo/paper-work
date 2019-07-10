@@ -341,6 +341,28 @@ Return:
             }]
         }]
 
+找回密码根据用户名得到验证码
 ===================================
-
+“/findcheckcode”
+Method: POST
+Parameters:
+	“username”
+Return:
+	{
+	“Status”: “ok”/
+	}
+	
+找回密码
+===================================	
+“/findpassword”
+Method: POST
+Parameters:	
+	"username":
+	"new_password":
+	"confirm_password":
+	"check_code":
+Return:
+	{
+	“Status”: “ok”/
+	}
 
