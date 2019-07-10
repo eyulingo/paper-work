@@ -226,10 +226,10 @@ Return："status": "ok" / "internal_error"
 
 Method：.POST
 Parameters:
-	“image_id”: 图像 ID，可能是头像的、商品的、商店的
+	<Image Object>
 
 Return:
-	<Image Object>
+	“image_id”: 图像 ID，可能是头像的、商品的、商店的
 
 ===================================
 
