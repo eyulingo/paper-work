@@ -116,7 +116,7 @@ Return:
 
 Method：.POST
 Parameters: 
-	“receive_no”: 收货人
+	“receive_name”: 收货人
 	“receive_phone”: 收货电话
 	“receive_address”: 收货地址
 
