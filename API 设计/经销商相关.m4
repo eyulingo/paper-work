@@ -233,7 +233,7 @@ Return："status": "ok" / "internal_error"
 
 给商品移除标签
 
-"store/addtag"
+"store/deletetag"
 
 Method: POST
     "good_id": 商品 ID
