@@ -175,7 +175,7 @@ Return:
 		“storage”: 库存
 		“description”: 描述
 		“image_id”: 图片 ID
-		"tags": [ “...”, “...” ]
+		"tags": [ “tag”:, “tag”: .... ]
 		"hidden":隐藏
 	} ...
 	]
