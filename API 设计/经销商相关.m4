@@ -197,8 +197,27 @@ Method: POST
 	"hidden":是否销售
 
 Return："status": "ok" / "internal_error"
+===================================
+
+新增商品
+“/addgood”
+
+Method：POST
+Parameters：
+    “name”: 商品名称
+	“price”: 价格
+	“coupon_price”: 优惠价格
+	“storage”: 库存
+	“description”: 描述
+	“image_id”: 图片 ID
+	//hidden默认设置 false(后端）
+
+Return："status": "ok" / "internal_error"
+
+
 	
 ===================================
+
 
 给商品加标签
 
@@ -287,39 +306,3 @@ Parameters:
 
 Return:
 	“image_id”: 图像 ID，可能是头像的、商品的、商店的
-
-===================================
-
-新增商品
-“/addgood”
-
-Method：POST
-Parameters：
-    “name”: 商品名称
-	“price”: 价格
-	“coupon_price”: 优惠价格
-	“storage”: 库存
-	“description”: 描述
-	“image_id”: 图片 ID
-	//hidden默认设置 false(后端）
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
