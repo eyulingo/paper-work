@@ -100,6 +100,63 @@ Params:
 	
 Return：“status”: “ok” “internal_error”
 
+
+===================================
+
+修改店铺封面图片
+“/store/cover”
+
+Method：POST
+
+Parameters：
+    "image_id": MongODB 图像
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+修改经销商头像
+“/store/avatar”
+
+Method：POST
+
+Parameters：
+    "image_id": MongODB 图像
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+设置默认配送方式
+“/store/setdefaultdelivery”
+
+Method：POST
+
+Parameters：
+    "delivery": 配送方式
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+获取可选配送方式
+"/store/getalldelivery”"
+
+Method：GET
+
+Return：
+        [{“delivery_method”: "配送方式"},{}...]
+
+===================================
+
+获取默认配送方式
+"/store/getdefaultdelivery”"
+
+Method：GET
+
+Return："status": "ok" / "internal_error"
+        “delivery_method”: "配送方式"
+
 ===================================
 
 获取我家商店的商品
@@ -257,51 +314,7 @@ Return："status": "ok" / "internal_error"
 
 
 
-===================================
 
-修改店铺封面图片
-“/store/cover”
-
-Method：POST
-
-Parameters：
-    "image_id": MongODB 图像
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-修改经销商头像
-“/store/avatar”
-
-Method：POST
-
-Parameters：
-    "image_id": MongODB 图像
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-设置默认配送方式
-“/store/setdefaultdelivery”
-
-Method：POST
-
-Parameters：
-    "delivery": 配送方式
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-获取默认配送方式
-"/store/setdefaultdelivery”"
-
-Method：GET
-
-Return："status": "ok" / "internal_error"
-        “delivery_method”: "配送方式"
 
 
 
