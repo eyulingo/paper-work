@@ -100,6 +100,63 @@ Params:
 	
 Return：“status”: “ok” “internal_error”
 
+
+===================================
+
+修改店铺封面图片
+“/store/cover”
+
+Method：POST
+
+Parameters：
+    "image_id": MongODB 图像
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+修改经销商头像
+“/store/avatar”
+
+Method：POST
+
+Parameters：
+    "image_id": MongODB 图像
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+设置默认配送方式
+“/store/setdefaultdelivery”
+
+Method：POST
+
+Parameters：
+    "delivery": 配送方式
+
+Return："status": "ok" / "internal_error"
+
+===================================
+
+获取可选配送方式
+"/store/getalldelivery”"
+
+Method：GET
+
+Return：
+        [{“delivery_method”: "配送方式"},{}...]
+
+===================================
+
+获取默认配送方式
+"/store/getdefaultdelivery”"
+
+Method：GET
+
+Return："status": "ok" / "internal_error"
+        “delivery_method”: "配送方式"
+
 ===================================
 
 获取我家商店的商品
@@ -118,7 +175,7 @@ Return:
 		“storage”: 库存
 		“description”: 描述
 		“image_id”: 图片 ID
-		"tags": [ “...”, “...” ]
+		"tags": [ “tag”:, “tag”: .... ]
 		"hidden":隐藏
 	} ...
 	]
@@ -140,8 +197,27 @@ Method: POST
 	"hidden":是否销售
 
 Return："status": "ok" / "internal_error"
+===================================
+
+新增商品
+“/addgood”
+
+Method：POST
+Parameters：
+    “name”: 商品名称
+	“price”: 价格
+	“coupon_price”: 优惠价格
+	“storage”: 库存
+	“description”: 描述
+	“image_id”: 图片 ID
+	//hidden默认设置 false(后端）
+
+Return："status": "ok" / "internal_error"
+
+
 	
 ===================================
+
 
 给商品加标签
 
@@ -157,7 +233,7 @@ Return："status": "ok" / "internal_error"
 
 给商品移除标签
 
-"store/addtag"
+"store/deletetag"
 
 Method: POST
     "good_id": 商品 ID
@@ -230,83 +306,3 @@ Parameters:
 
 Return:
 	“image_id”: 图像 ID，可能是头像的、商品的、商店的
-
-===================================
-
-新增商品
-“/addgood”
-
-Method：POST
-Parameters：
-    “name”: 商品名称
-	“price”: 价格
-	“coupon_price”: 优惠价格
-	“storage”: 库存
-	“description”: 描述
-	“image_id”: 图片 ID
-	//hidden默认设置 false(后端）
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-
-
-
-
-
-
-
-===================================
-
-修改店铺封面图片
-“/store/cover”
-
-Method：POST
-
-Parameters：
-    "image_id": MongODB 图像
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-修改经销商头像
-“/store/avatar”
-
-Method：POST
-
-Parameters：
-    "image_id": MongODB 图像
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-设置默认配送方式
-“/store/setdefaultdelivery”
-
-Method：POST
-
-Parameters：
-    "delivery": 配送方式
-
-Return："status": "ok" / "internal_error"
-
-===================================
-
-获取默认配送方式
-"/store/setdefaultdelivery”"
-
-Method：GET
-
-Return："status": "ok" / "internal_error"
-        “delivery_method”: "配送方式"
-
-
-
-
-
-
-
-
