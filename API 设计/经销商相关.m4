@@ -271,7 +271,7 @@ Return:
                     “store”: 商店名称
                         “store_id” ：商店ID
                     “current_price”: 下单时刻的价格
-                    “storage”: 库存
+                    “amount”: 数量
                     “description”: 描述
                     “image_id”: 图片 ID
                 }]
