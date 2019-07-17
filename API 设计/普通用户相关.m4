@@ -123,7 +123,29 @@ Parameters:
 Return:
 	“status”: “ok”/“internal_error”
 
+	
+
 ===================================
+获取联想词
+
+“/suggests”
+
+Method: .GET
+
+Parameters:
+
+	“q” - 关键字
+
+Return:
+
+	“Status”: “ok”, “internal_error”
+
+	“values”: ["word1", "word2", "word3", ...]
+
+
+
+====================================
+
 
 删除收货地址
 “/removeaddress”
@@ -255,31 +277,39 @@ Parameters: <none>
 Return: {
 	“status”: “ok”/“internal_error”
 	“values”: [{ 
-		“商品名称”: 
-		“商品 ID”:
-		“商品图片 ID”
-		“单价”:
-		“数量"
+		name:“商品名称”: 
+		id:“商品 ID”:
+		image_id:“商品图片 ID”
+		price:“单价”:
+		amount:“数量"
 	 }]
 
 ===================================
+
+删除购物车中项目
+/deletecart
+Method: .POST
+Parameters:
+	“id”: 商品 ID
+
+Return: {
+	“status”: “ok”/“internal_error"
+}
 
 购买
 “/purchase”
 Method: .POST
 
 Parameters:
-	“id”: 商品 ID
-	“amount”: 商品数量
-	“receive_no”: 收货人
+	"values":[{"id":3,"amount":11},{"id":2,"amount":21},{"id":12,"amount":31},{"id":13,"amount":41}。。。。。。。。。。。],
+	“receive_name”: 收货人
 	“receive_phone”: 收货电话
 	“receive_address”: 收货地址
 
-<special>: 同时发送多个商品写法：
-?id=1&id=2&id=3&amount=1&amount=2&amount=3
+
 
 Return:
-	“status”: “ok”/"inadequate_storage"/“internal_error”
+	“status”: “ok”/"inadequate_storage"/“internal_error/Some goods have been removed from shelves”
 	“cost”: “¥12.50”
 
 ===================================
