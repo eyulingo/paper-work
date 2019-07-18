@@ -241,6 +241,7 @@ Return:
 		“coupon_price”: 优惠价格
 		“storage”: 库存
 		"star":平均分
+		"star_number":评分人数
 		“description”: 描述
 		“image_id”: 图片 ID
 		“comments”: [{ “username”, “comment_content”: “star_count”}...]
@@ -265,6 +266,7 @@ Return: {
     "provider_avatar": 经销商头像
 	“comments”: [{ “username”, “comment_content”: “star_count”}...]
 	"star":平均分
+	"star_number":评分人数
 	“values”: 
 	[{
 		“id”: 商品 ID
