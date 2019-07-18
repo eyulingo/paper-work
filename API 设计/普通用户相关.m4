@@ -161,8 +161,20 @@ Return:
 	
 ====================================
 
-获取联想词
+获取商品联想词
 “/suggests”
+Method: .GET
+Parameters:
+	“q” - 关键字
+Return:
+	“Status”: “ok”, “internal_error”
+	“values”: ["word1", "word2", "word3", ...]
+
+====================================
+
+
+获取商店联想词
+“/suggeststore”
 Method: .GET
 Parameters:
 	“q” - 关键字
