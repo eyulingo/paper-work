@@ -74,6 +74,10 @@ Return：“status”: “ok” “internal_error”
 	"deliver_method":默认配送
 
 	“comments”: [{ “username”, “comment_content”: “star_count”}...]
+	
+	"star":平均分
+	
+	"star_number":评分人数
 
 
 
