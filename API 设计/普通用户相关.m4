@@ -308,7 +308,23 @@ Return: {
 		image_id:“商品图片 ID”
 		price:“单价”:
 		amount:“数量"
+		store_id:"商店 ID"
+		store:"商店名"
+		storage:实时库存
 	 }]
+	 
+===================================
+
+编辑购物车商品数量
+
+"/editcart"
+Method: .POST
+
+Parameters: 
+	"id": 商品 ID
+	"amount": 商品的新数量
+Return: {
+	“status”: “ok”/“internal_error”	
 
 ===================================
 
