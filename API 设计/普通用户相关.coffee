@@ -445,7 +445,7 @@ comment_store = ({
 
 
 # =============================================
-# 查看已购买订单
+# 查看所有订单
 # =============================================
 view_purchased_bills = ({
 	name: "查看已购买订单",
@@ -462,7 +462,7 @@ view_purchased_bills = ({
 			receiver_phone: "<联系电话>",
 			receive_address: "<收货地址>",
 			transport_method: "<配送方式>",
-			order_status: "<订单状态> - " - <"pending" / "transporting" / "received" / "invalid">,
+			order_status: "<订单状态> - " - <"unpurchased", "pending" / "transporting" / "received" / "invalid">,
 			goods: [
 				{
 					id: "<商品 ID>",
