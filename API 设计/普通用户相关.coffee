@@ -513,16 +513,17 @@ find_password = ({
 	status: <"ok" / "bad_confirm" / "internal_error">
 }).notes("先调用 find_checkcode_forget 获得验证码后，再调用此接口。")
 
+
 # =============================================
 # 付款
 # =============================================
-pay({
+pay = ({
 	name: "找回密码根据找回密码用户名得到验证码",
 	url: "/pay",
 	method: "POST"
 }).params({
-	order_id: [{"order_id":1},{"order_id":2},{"order_id":3}....]
+	order_id: [{"order_id": 1}, {"order_id": 2}, {"order_id": 3}, <... more identical structures ...> ]
 }).response({
 	status: <"ok" / "internal_error">
-})
+}).notes("先调用 purchase 提交订单后，再调用此接口付款。")
 
