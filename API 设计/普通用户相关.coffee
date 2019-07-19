@@ -390,10 +390,10 @@ delete_from_my_cart = ({
 
 
 # =============================================
-# 购买
+# 提交订单
 # =============================================
 purchase = ({
-	name: "购买",
+	name: "提交订单"
 	url: "/purchase",
 	method: "POST"
 }).params({
@@ -405,7 +405,8 @@ purchase = ({
 	]
 }).response({
 	status: <"ok" / "inadequate_storage" / "internal_error" / "Some goods have been removed from shelves">,
-	cost: "<消费金额>"
+	cost: "<消费金额>",
+	order_id: ["ID1", "ID2", "ID3", ...]
 })
 
 
@@ -511,4 +512,17 @@ find_password = ({
 }).response({
 	status: <"ok" / "bad_confirm" / "internal_error">
 }).notes("先调用 find_checkcode_forget 获得验证码后，再调用此接口。")
+
+# =============================================
+# 付款
+# =============================================
+pay({
+	name: "找回密码根据找回密码用户名得到验证码",
+	url: "/pay",
+	method: "POST"
+}).params({
+	order_id: "<付款的订单号>"
+}).response({
+	status: <"ok" / "internal_error">
+})
 
