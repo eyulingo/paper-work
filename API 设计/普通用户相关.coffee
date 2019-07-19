@@ -521,7 +521,7 @@ pay({
 	url: "/pay",
 	method: "POST"
 }).params({
-	order_id: "<付款的订单号>"
+	order_id: [{"order_id":1},{"order_id":2},{"order_id":3}....]
 }).response({
 	status: <"ok" / "internal_error">
 })
