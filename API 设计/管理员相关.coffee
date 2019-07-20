@@ -77,10 +77,10 @@ modify_dist_info = ({
 	method: "POST"
 }).params({
 	store_id: "<店铺 ID <用于定位店铺>>",
-    location: "<地理位置>",
-    truename: "<真实姓名>",
-    phone_nu: "<联系方式>",
-    password: "<密码>"
+	location: "<地理位置>",
+	truename: "<真实姓名>",
+	phone_nu: "<联系方式>",
+	password: "<密码>"
 }).response({
 	status: <"ok" / "bad_format" / "internal_error">
 })
