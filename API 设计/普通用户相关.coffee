@@ -532,3 +532,17 @@ pay = ({
 	status: <"ok" / "internal_error">
 }).notes("先调用 purchase 提交订单后，再调用此接口付款。")
 
+# =============================================
+# 删除未付款订单
+# =============================================
+deleteorder = ({
+	name: "付款",
+	url: "/deleteorder",
+	method: "POST"
+}).params({
+	order_id: 1
+}).response({
+	status: <"ok" / "internal_error">
+}).notes("先调用 purchase 提交订单后，再调用此接口付款。")
+
+
