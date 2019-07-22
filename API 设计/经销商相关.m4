@@ -265,9 +265,8 @@ Return:
             “receiver”: 收货人
             “receiver_phone”: 收货电话
             “receiver_address”: 收货地址
-
+	    "time":订单创建时间
             "transport_method": 配送方式
-
             “order_status”: 订单状态 「“pending”, “transporting”, “received”, “invalid”」
                 “goods”: [{
                     “id”: 商品 ID
@@ -348,9 +347,8 @@ Return:
             “receiver”: 收货人
             “receiver_phone”: 收货电话
             “receiver_address”: 收货地址
-
+	    "time":订单创建时间
             "transport_method": 配送方式
-
             “order_status”: 订单状态 「“pending”, “transporting”, “received”, “invalid”」
                 “goods”: [{
                     “id”: 商品 ID
