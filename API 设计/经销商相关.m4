@@ -315,7 +315,7 @@ Return:
 ===================================
 
 得到具体商品评价
-“/goodcomments”
+“/store/goodcomments”
 
 Method：.GET
 Parameters:
@@ -332,7 +332,7 @@ Return:
 ===================================
 
 得到选定订单
-“/goodcomments”
+“/store/selectorders”
 
 Method：.GET
 Parameters:
