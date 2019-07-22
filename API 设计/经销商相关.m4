@@ -328,3 +328,40 @@ Return:
 	"good_name":商品名称
 	"comments":[{ “username”, “comment_content”: “star_count”}...]
 	
+	
+===================================
+
+得到选定订单
+“/goodcomments”
+
+Method：.GET
+Parameters:
+	startTime:
+	endTime:
+	username:
+Return:
+	"status": "ok" / "internal_error"
+        "values": [{ 
+            "username": 下单用户名
+            "user_id": 下单用户 ID
+            “bill_id” 订单 ID
+            “receiver”: 收货人
+            “receiver_phone”: 收货电话
+            “receiver_address”: 收货地址
+
+            "transport_method": 配送方式
+
+            “order_status”: 订单状态 「“pending”, “transporting”, “received”, “invalid”」
+                “goods”: [{
+                    “id”: 商品 ID
+                    “name”: 商品名称
+                    “store”: 商店名称
+                        “store_id” ：商店ID
+                    “current_price”: 下单时刻的价格
+                    “amount”: 数量
+                    “description”: 描述
+                    “image_id”: 图片 ID
+                }]
+            }]
+        }]
+	
