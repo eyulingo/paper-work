@@ -460,6 +460,7 @@ view_purchased_bills = ({
 	status: <"ok" / "internal_error">,
 	values: [
 		{
+			generate_time: "<订单创建时间>",
 			order_id: "<订单 ID>",
 			receiver: "<收货人>",
 			receiver_phone: "<联系电话>",
