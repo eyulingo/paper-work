@@ -311,3 +311,19 @@ Parameters:
 
 Return:
 	“image_id”: 图像 ID，可能是头像的、商品的、商店的
+	
+===================================
+
+得到具体商品评价
+“/goodcomments”
+
+Method：.GET
+Parameters:
+	goodid:
+
+Return:
+	"status":"ok",
+	"a_star":评价分,
+	"people":评分人数，
+	"values":[{ “username”, “comment_content”: “star_count”}...]
+	
