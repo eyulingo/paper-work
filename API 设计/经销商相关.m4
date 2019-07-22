@@ -323,7 +323,8 @@ Parameters:
 
 Return:
 	"status":"ok",
-	"a_star":评价分,
-	"people":评分人数，
-	"values":[{ “username”, “comment_content”: “star_count”}...]
+	"star":评价分,
+	"star_number":评分人数，
+	"good_name":商品名称
+	"comments":[{ “username”, “comment_content”: “star_count”}...]
 	
