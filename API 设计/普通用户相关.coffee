@@ -397,6 +397,9 @@ purchase = ({
 	url: "/purchase",
 	method: "POST"
 }).params({
+	receive_name: "<收货人姓名>",
+	receive_phone: "<收货人电话>",
+	receive_addres: "<收货人地址>",
 	values: [
 		{
 			id: "<商品 ID>",
