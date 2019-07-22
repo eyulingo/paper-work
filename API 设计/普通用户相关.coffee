@@ -504,7 +504,7 @@ find_checkcode_forget = ({
 # 找回密码
 # =============================================
 find_password = ({
-	name: "找回密码根据找回密码用户名得到验证码",
+	name: "找回密码",
 	url: "/findpassword",
 	method: "POST"
 }).params({
@@ -521,7 +521,8 @@ find_password = ({
 # 付款
 # =============================================
 pay = ({
-	name: "找回密码根据找回密码用户名得到验证码",
+	username: "<用户名>",
+	name: "付款",
 	url: "/pay",
 	method: "POST"
 }).params({
