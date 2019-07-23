@@ -616,6 +616,7 @@ search_stores = ({
 		time: "<营业时间>",
 		image_id: "<封面地址>"
 		star:"<评分>"
+		star_number:"<评分人数>"
 	}]
 })
 
