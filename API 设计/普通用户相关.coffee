@@ -504,6 +504,9 @@ view_purchased_bills = ({
 	status: <"ok" / "internal_error">,
 	values: [
 		{
+			rated: "true / false，此笔订单是否已经被评价了",
+			star_count: "如果评价了（rated 为 true），则为评价星级数",
+			comment_content: "如果评价了（rated 为 true），则为评价内容",
 			generate_time: "<订单创建时间>",
 			order_id: "<订单 ID>",
 			receiver: "<收货人>",
@@ -576,6 +579,8 @@ pay = ({
 	status: <"ok" / "internal_error">
 }).notes("先调用 purchase 提交订单后，再调用此接口付款。")
 
+
+
 # =============================================
 # 删除未付款订单
 # =============================================
@@ -588,5 +593,21 @@ deleteorder = ({
 }).response({
 	status: <"ok" / "internal_error">
 }).notes("先调用 purchase 提交订单后，再调用此接口付款。")
+
+
+# =============================================
+# 评价订单
+# =============================================
+rateorder = ({
+	name: "付款",
+	url: "/rateorder",
+	method: "POST"
+}).params({
+	order_id: 1,
+	star_count: <1 - 5 的数字>,
+	comment_content: "<评价内容>"
+}).response({
+	status: <"ok" / "internal_error">
+}).notes("先调用 purchase 提交订单，等订单结束之后，再调用此接口付款。")
 
 
