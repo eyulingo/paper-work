@@ -243,6 +243,50 @@ search_stores = ({
 	}]
 })
 
+# =============================================
+# 按销量排序的店铺
+# =============================================
+search_stores = ({
+	name: "搜索店铺",
+	url: "/searchstorebysold",
+	method: "GET"
+}).params({
+	q: "<搜索关键字>"
+}).response({
+	status: <"ok" / "internal_error">,
+	values: [{
+		id: "<店铺 ID>",
+		name: "<店铺名称>",
+		address: "<店铺地址>",
+		time: "<营业时间>",
+		image_id: "<封面地址>"
+	}]
+})
+
+
+# =============================================
+# 按距离排序的搜索店铺
+# =============================================
+search_stores = ({
+	name: "搜索店铺",
+	url: "/searchstorebydistance",
+	method: "GET"
+}).params({
+	q: "<搜索关键字>",
+	long: "<用户当前所在的经度>",
+	lat: "<用户当前所在的纬度>"
+}).response({
+	status: <"ok" / "internal_error">,
+	values: [{
+		id: "<店铺 ID>",
+		name: "<店铺名称>",
+		address: "<店铺地址>",
+		time: "<营业时间>",
+		image_id: "<封面地址>"
+	}]
+})
+
+
 
 # =============================================
 # 商品详情
