@@ -283,6 +283,28 @@ search_stores = ({
 		address: "<店铺地址>",
 		time: "<营业时间>",
 		image_id: "<封面地址>"
+		distance:"<距离>"
+	}]
+})
+
+# =============================================
+# 按评价排序的搜索店铺
+# =============================================
+search_stores = ({
+	name: "搜索店铺",
+	url: "/searchstorebystar",
+	method: "GET"
+}).params({
+	q: "<搜索关键字>"
+}).response({
+	status: <"ok" / "internal_error">,
+	values: [{
+		id: "<店铺 ID>",
+		name: "<店铺名称>",
+		address: "<店铺地址>",
+		time: "<营业时间>",
+		image_id: "<封面地址>"
+		star:"<评分>"
 	}]
 })
 
