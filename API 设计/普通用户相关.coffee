@@ -624,7 +624,7 @@ search_stores = ({
 # 评价订单
 # =============================================
 rateorder = ({
-	name: "付款",
+	name: "评价订单",
 	url: "/rateorder",
 	method: "POST"
 }).params({
@@ -633,6 +633,20 @@ rateorder = ({
 	comment_content: "<评价内容>"
 }).response({
 	status: <"ok" / "internal_error">
-}).notes("先调用 purchase 提交订单，等订单结束之后，再调用此接口付款。")
+})
 
 
+
+# =============================================
+# 获取推荐 tag
+# =============================================
+populartags = ({
+	name: "获取推荐 tag",
+	url: "/populartags",
+	method: "GET"
+}).params({
+	# - <none> - #
+}).response({
+	status: <"ok" / "internal_error">,
+	tags: ["tag1", "tag2", "tag3", ...]
+})
