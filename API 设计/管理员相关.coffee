@@ -109,3 +109,27 @@ get_store_goods = ({
 		"hidden": "<隐藏>"
 		}, ... < more identical structures > ]
 })
+
+===================================
+
+给商品加标签
+
+"admin/addtag"
+
+Method: POST
+    "good_id": 商品 ID
+    "tag_name": tag 名称
+Return："status": "ok" / "internal_error"
+
+
+===================================
+
+给商品移除标签
+
+"admin/deletetag"
+
+Method: POST
+    "good_id": 商品 ID
+    "tag_name": tag 名称
+
+Return："status": "ok" / "internal_error"
