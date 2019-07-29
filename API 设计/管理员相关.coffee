@@ -84,3 +84,28 @@ modify_dist_info = ({
 }).response({
 	status: <"ok" / "bad_format" / "internal_error">
 })
+
+
+# =============================================
+# 获取商店所有商品
+# =============================================
+get_store_goods = ({
+	name: "获取商店所有商品",
+	url: "/admin/getgoods",
+	method: "GET"
+}).params({
+	store_id: "<店铺 ID>"
+}).response({
+	status: <"ok" / "bad_format" / "internal_error">,
+	values: [{
+		"id": "<商品 ID>",
+		"name": "<商品名称>",
+		"price": "<价格>",
+		"coupon_price": "<优惠价格>",
+		"storage": "<库存>",
+		"description": "<描述>",
+		"image_id": "<图片 ID>",
+		"tags": [ "tag1", "tag2,  ... ],
+		"hidden": "<隐藏>"
+		}, ... < more identical structures > ]
+})
