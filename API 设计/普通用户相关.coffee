@@ -663,7 +663,4 @@ confirm_received = ({
 	order_id: "<订单号>"
 }).response({
 	status: <"ok" / "internal_error">,
-	tags: ["tag1", "tag2", "tag3", ...]
-})
-	order_id: "<订单 ID>"
 })
