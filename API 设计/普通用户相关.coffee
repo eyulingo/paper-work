@@ -25,7 +25,8 @@ user_login = ({
 get_check_code = ({
 	name: "获取验证码",
 	url: "/getcode",
-	method: "POST"
+	method: "POST",
+	type: "< 0 - 注册用验证码 / 1 - 改绑邮箱验证码 / 2 - 找回密码验证码>"
 }).params({
 	email: "<接收验证码的电子邮箱>"
 }).response({
@@ -649,4 +650,20 @@ populartags = ({
 }).response({
 	status: <"ok" / "internal_error">,
 	tags: ["tag1", "tag2", "tag3", ...]
+})
+
+# =============================================
+# 确认收货某订单
+# =============================================
+confirm_received = ({
+	name: "确认收货某订单",
+	url: "/confirm",
+	method: "POST"
+}).params({
+	order_id: "<订单号>"
+}).response({
+	status: <"ok" / "internal_error">,
+	tags: ["tag1", "tag2", "tag3", ...]
+})
+	order_id: "<订单 ID>"
 })
