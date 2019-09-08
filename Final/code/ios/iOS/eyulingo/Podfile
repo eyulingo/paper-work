@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'Eyulingo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'Alamofire-SwiftyJSON'
+  pod 'SwiftyJSON'
+  pod 'YPImagePicker'
+  pod 'Loaf'
+  pod 'VideoSplashKit'
+  pod 'Refresher'
+  pod 'IQKeyboardManager'
+  pod 'Highlighter'
+  pod 'TagListView', '~> 1.0'
+end

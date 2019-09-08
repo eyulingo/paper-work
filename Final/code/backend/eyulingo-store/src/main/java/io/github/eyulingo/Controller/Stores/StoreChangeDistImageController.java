@@ -1,0 +1,27 @@
+package io.github.eyulingo.Controller.Stores;
+
+import io.github.eyulingo.Service.StoreService;
+import net.sf.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import java.io.UnsupportedEncodingException;
+
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+
+
+@RestController
+public class StoreChangeDistImageController {
+    @Autowired
+    private StoreService storeService;
+
+
+    @RequestMapping(value = "/store/avatar",method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
+    public
+    @ResponseBody
+    String storeChangeImage(@RequestBody JSONObject data){
+        return this.storeService.ChangeDistImage(data);
+
+    }
+}

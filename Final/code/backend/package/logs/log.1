@@ -1,0 +1,29 @@
+Sending build context to Docker daemon  83.97kB
+Step 1/10 : FROM mysql:5.7
+ ---> a1aa4f76fab9
+Step 2/10 : ADD setup.sh /etc/mysql/setup.sh
+ ---> 77d740f799bb
+Step 3/10 : ADD script/init_db.sql /etc/mysql/init_db.sql
+ ---> cb4db7fb6428
+Step 4/10 : ADD script/initialize.sql /etc/mysql/initialize.sql
+ ---> 71312392dd1e
+Step 5/10 : ADD script/add_example_data.sql /etc/mysql/add_example_data.sql
+ ---> 21e727e4dc2f
+Step 6/10 : ADD script/privileges.sql /etc/mysql/privileges.sql
+ ---> fa0c0b65bbd6
+Step 7/10 : COPY utf8mb4.cnf /etc/mysql/conf.d/
+ ---> 9b40e7ff24cf
+Step 8/10 : EXPOSE 3306
+ ---> Running in 97d074302115
+Removing intermediate container 97d074302115
+ ---> f95073b2b8ee
+Step 9/10 : ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes
+ ---> Running in 0d19d5d7febb
+Removing intermediate container 0d19d5d7febb
+ ---> d95efa0c0fba
+Step 10/10 : CMD ["sh", "/etc/mysql/setup.sh"]
+ ---> Running in 9cb02e384773
+Removing intermediate container 9cb02e384773
+ ---> ce4f93f1bdb9
+Successfully built ce4f93f1bdb9
+Successfully tagged yuxiqian/eyulingo-mysql:latest
