@@ -4,4 +4,10 @@
 *.ps linguist-detectable=true
 *.eps linguist-detectable=true
 
+*.swift linguist-detectable=false
+*.java linguist-detectable= false
+*.kt linguist-detectable=false
+*.vue linguist-detectable=false
+*.js linguist-detectable=false
+
 Final/*.* linguist-generated=true
