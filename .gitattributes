@@ -3,3 +3,5 @@
 *.sql linguist-detectable=true
 *.ps linguist-detectable=true
 *.eps linguist-detectable=true
+
+Final/*.* linguist-generated=true
